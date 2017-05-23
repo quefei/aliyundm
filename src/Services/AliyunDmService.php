@@ -6,7 +6,7 @@ use Quefei\AliyunDm\Contracts\AliyunDmContract;
 
 include_once __DIR__.'/../Sdk/aliyun-php-sdk-core/Config.php';
 
-use Dm\Request\V20151123 as Dm;
+use Quefei\AliyunDm\Sdk\Dm\Request\V20151123 as Dm;
 
 class AliyunDmService implements AliyunDmContract
 {
