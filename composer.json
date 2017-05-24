@@ -19,6 +19,6 @@
             "Quefei\\AliyunDm\\": "src/"
         },
 		"classmap": ["src/Sdk/aliyun-php-sdk-dm/Dm/Request/V20151123/"],
-		"files": ["src/Sdk/aliyun-php-sdk-core/Config.php"]
+		"files": ["src/Sdk/aliyun-php-sdk-core/Config.php", "src/Helpers/AliyunDmHelper.php"]
     }
 }
