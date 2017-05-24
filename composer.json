@@ -1,0 +1,22 @@
+{
+    "name": "quefei/aliyundm",
+    "description": "AliyunDm for Laravel 阿里云邮件推送",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan",
+            "email": "ivan@youzi.com.cn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.7",
+        "illuminate/support": "5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quefei\\AliyunDm\\": "src/"
+        }
+    }
+}
