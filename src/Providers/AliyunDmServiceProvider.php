@@ -10,7 +10,14 @@ class AliyunDmServiceProvider extends ServiceProvider
 	public function boot()
     {
         /**
-         * 生成配置文件
+         * 生成配置文件，用户使用时需要自定义一下：
+         *
+         * $AccessKeyID = config('aliyundm.AccessKeyID');
+         * $AccessKeySecret = config('aliyundm.AccessKeySecret');
+         * $SendAddress = config('aliyundm.SendAddress');
+         * $Sender = config('aliyundm.Sender');
+         * $MailTag = config('aliyundm.MailTag');
+         * 
          */
         $this->publishes([
             __DIR__.'/../Config/AliyunDmConfig.php' => config_path('aliyundm.php'),

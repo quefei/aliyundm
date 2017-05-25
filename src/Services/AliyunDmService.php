@@ -11,11 +11,11 @@ class AliyunDmService implements AliyunDmContract
 	public $to;
 	public $subject;
 	public $body;
-	public $AccessKeyID = "";
-	public $AccessKeySecret = "";
-	public $SendAddress = "";
-	public $Sender = "";
-	public $MailTag = "";
+	public $AccessKeyID;
+	public $AccessKeySecret;
+	public $SendAddress;
+	public $Sender;
+	public $MailTag;
 
 
 	/**
@@ -24,10 +24,15 @@ class AliyunDmService implements AliyunDmContract
      * @param  string  $to
 	 * @param  string  $subject
 	 * @param  string  $body
+	 * @param  string  $AccessKeyID
+	 * @param  string  $AccessKeySecret
+	 * @param  string  $SendAddress
+	 * @param  string  $Sender
+	 * @param  string  $MailTag
      * @return string
      */
-    public function send($to, $subject, $body)
+    public function send($to, $subject, $body, $AccessKeyID, $AccessKeySecret, $SendAddress, $Sender, $MailTag)
 	{
-		dmSendMail($to, $subject, $body, $this->AccessKeyID, $this->AccessKeySecret, $this->SendAddress, $this->Sender, $this->MailTag);
+		dmSendMail($to, $subject, $body, $AccessKeyID, $AccessKeySecret, $SendAddress, $Sender, $MailTag);
 	}
 }
