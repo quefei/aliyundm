@@ -62,7 +62,9 @@
    * 列如（假设的值）
    */
   
-  DM::send("123456789@qq.com", "斗地主", "欢迎参加斗地主大赛", "L6d644013c2414ab", "Tb2ed79818ac6498f72c45bf0b17d0", "service@mail.dongfang.com", "东方公司", "service");
+  DM::send("123456789@qq.com", "斗地主", "欢迎参加斗地主大赛", "L6d644013c2414ab", 
+
+  "Tb2ed79818ac6498f72c45bf0b17d0", "service@mail.dongfang.com", "东方公司", "service");
 ```
 
 或者：
@@ -88,6 +90,8 @@
    * 列如（假设的值）
    */
   
-  dmSendMail("123456789@qq.com", "斗地主", "欢迎参加斗地主大赛", "L6d644013c2414ab", "Tb2ed79818ac6498f72c45bf0b17d0", "service@mail.dongfang.com", "东方公司", "service");
+  dmSendMail("123456789@qq.com", "斗地主", "欢迎参加斗地主大赛", "L6d644013c2414ab", 
+  
+  "Tb2ed79818ac6498f72c45bf0b17d0", "service@mail.dongfang.com", "东方公司", "service");
 ```
 
