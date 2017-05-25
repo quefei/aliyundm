@@ -5,8 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Ivan",
-            "email": "ivan@youzi.com.cn"
+            "name": "Ivan"
         }
     ],
     "minimum-stability": "dev",
