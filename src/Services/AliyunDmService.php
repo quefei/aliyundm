@@ -24,14 +24,27 @@ class AliyunDmService implements AliyunDmContract
      * @param  string  $to
 	 * @param  string  $subject
 	 * @param  string  $body
-	 * @param  string  $AccessKeyID
-	 * @param  string  $AccessKeySecret
-	 * @param  string  $SendAddress
-	 * @param  string  $Sender
-	 * @param  string  $MailTag
      * @return string
      */
-    public function send($to, $subject, $body, $AccessKeyID, $AccessKeySecret, $SendAddress, $Sender, $MailTag)
+    public function send($to, $subject, $body)
+	{
+		$this->dmConfig();
+		
+		$this->sendMail($to, $subject, $body, $this->AccessKeyID, $this->AccessKeySecret, $this->SendAddress, $this->Sender, $this->MailTag);
+	}
+	
+	
+	public function dmConfig()
+	{
+		$this->AccessKeyID = config('aliyundm.AccessKeyID');
+		$this->AccessKeySecret = config('aliyundm.AccessKeySecret');
+		$this->SendAddress = config('aliyundm.SendAddress');
+		$this->Sender = config('aliyundm.Sender');
+		$this->MailTag = config('aliyundm.MailTag');
+	}
+	
+	
+    public function sendMail($to, $subject, $body, $AccessKeyID, $AccessKeySecret, $SendAddress, $Sender, $MailTag)
 	{
 		dmSendMail($to, $subject, $body, $AccessKeyID, $AccessKeySecret, $SendAddress, $Sender, $MailTag);
 	}
